@@ -1,0 +1,55 @@
+@import "../../public/styles.scss";
+
+.newsletter-container {
+    background: $grey;
+    padding: 0.2rem 27px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    & > form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 2rem;
+        & > input {
+            min-height: 52px;
+            border-radius: 6px;
+            border: none;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            &::placeholder {
+                font-family: $lato;
+                font-size: 12px;
+            }
+        }
+        & > button {
+            height: 52px;
+        }
+        .input-error {
+            border: 1px solid $red;
+            position: relative;
+            &::placeholder {
+                color: $red;
+            }
+        }
+        @media screen and (min-width: $medium) {
+            flex-direction: row;
+            justify-content: center;
+            & > input {
+                width: 280px;
+                margin-right: 8px;
+            }
+            & > button {
+                width: 140px;
+                border-radius: 0;
+            }
+        }
+    }
+    @media screen and (min-width: $medium) {
+        &>h1{
+            font-weight: 900;
+            font-size: 22px;
+            width: 553px;
+        }
+    }
+}

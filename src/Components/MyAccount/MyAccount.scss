@@ -1,0 +1,15 @@
+@import "../../public/styles.scss";
+
+.btn-myAccount{
+    display: none;
+    font-size: 13px;
+    color: $light-grey;
+    align-items: center;
+    &>img{
+        width: 15px;
+        margin-right: 4px;
+    }
+    @media screen and(min-width:$medium) {
+    display: flex;
+    }
+}

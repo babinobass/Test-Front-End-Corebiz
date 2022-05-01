@@ -1,0 +1,46 @@
+@import "../../public/styles.scss";
+
+.btnPrimary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 44.42px;
+    max-height: 52px;
+    height: 100%;
+    border: none;
+    border-radius: 5.57px;
+    background: $black;
+    color: $white;
+}
+
+.btnSecondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 44.42px;
+    max-height: 51px;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    background: $white;
+    color: $black;
+}
+
+.btnArrow {
+    border: none;
+    background: transparent;
+    position: absolute;
+    max-width: 40px;
+    top: 50%;
+    right: 0;
+    &>img{
+        width: 12px;
+        height: 22px;
+    }
+}
+.arrowLeft{
+    left: 0;
+    transform: rotate(180deg);
+}

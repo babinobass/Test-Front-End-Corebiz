@@ -1,0 +1,95 @@
+@import "../../public/styles.scss";
+
+.product-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 172px;
+    max-width: 172px;
+    object-fit: cover;
+    margin-right: 1.1rem;
+    .off-card {
+        background: $red;
+        width: 62px;
+        height: 55px;
+        clip-path: polygon(100% 0, 0 0, 100% 100%);
+        position: absolute;
+        top: 0;
+        right:0;
+        z-index: 1;
+        color: $white;
+        text-align: end;
+        font-size: 10px;
+        &>p{
+            margin-right: 8px;
+        }
+    }
+    & > img {
+        width: 100%;
+        max-height: 151px;
+    }
+    .product-card-name {
+        color: $light-grey;
+        font-size: 10px;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    .product-card-listPrice {
+        color: $light-grey;
+        font-size: 11px;
+        text-decoration: line-through;
+        margin: 0;
+    }
+    .product-card-price {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0;
+        margin-top: 0.2rem;
+    }
+    .product-card-quantity {
+        color: $light-grey;
+        font-size: 11px;
+        margin-top: 0.3rem;
+    }
+    .btn-pruduct-card {
+        font-family: $ubuntu;
+        font-size: 15px;
+    }
+    .none {
+        opacity: 0;
+    }
+    @media screen and (min-width: $medium) {
+        max-width: 100%;
+        width: 216px;
+        padding-bottom: 14.41px;
+        margin-right: 5.15vw;
+
+        &:hover {
+            background: $grey-hover-card;
+            .btn-pruduct-card {
+                opacity: 1;
+            }
+        }
+        & > img {
+            max-height: 200px;
+        }
+        .product-card-name,
+        .product-card-listPrice {
+            font-size: 12px;
+        }
+        .product-card-price {
+            font-size: 18px;
+        }
+        .btn-pruduct-card {
+            width: 125px;
+            opacity: 0;
+        }
+        .off-card{
+            width: 81px;
+            height: 72px;
+            font-weight: 900;
+            font-size: 16px;
+        }
+    }
+}

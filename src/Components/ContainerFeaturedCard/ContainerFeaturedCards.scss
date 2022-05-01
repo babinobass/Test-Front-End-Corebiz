@@ -1,0 +1,69 @@
+@import "../../public/styles.scss";
+
+.container-featured-card {
+    width: 100%;
+    position: relative;
+    margin-left: 0;
+    margin-top: 1rem;
+    max-width: 370px;
+    min-height: 350px;
+    & > div:first-child {
+        overflow: hidden;
+    }
+    .container-div-card {
+        width: 100%;
+        display: -webkit-inline-box;
+        align-items: flex-end;
+    }
+    .trigger-container-cards {
+        position: absolute;
+        display: flex;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        & > input {
+            width: 9px;
+            height: 9px;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: $input-grey;
+                left: 0;
+                top: 0;
+                border-radius: 50%;
+            }
+        }
+        & > input:checked::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: $red;
+            left: 0;
+            top: 0;
+            border-radius: 50%;
+        }
+    }
+    .btn-arrow-featured {
+        display: none;
+    }
+    @media screen and (min-width: $medium) {
+        max-width: 100%;
+        .trigger-container-cards {
+            display: none;
+        }
+        & > div:first-child {
+            width: 93%;
+            position: relative;
+            left: 3rem;
+        }
+        .btn-arrow-featured {
+            display: block;
+        }
+    }
+}

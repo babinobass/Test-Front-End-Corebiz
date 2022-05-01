@@ -1,0 +1,24 @@
+@import "../../public/styles.scss";
+.cart-container {
+    position: relative;
+    display: flex;
+    .btn-cart {
+        border: none;
+        background: transparent;
+        object-fit: cover;
+        & > img {
+            width: 20px;
+        }
+    }
+    .noti-cart {
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+        color: $white;
+        background: $red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+}
