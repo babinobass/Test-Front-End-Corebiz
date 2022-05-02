@@ -66,4 +66,7 @@
             display: block;
         }
     }
+    @media screen and (max-width: 376px) {
+        padding: 1rem, 6px;
+    }
 }
