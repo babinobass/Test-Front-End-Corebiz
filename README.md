@@ -7,7 +7,6 @@ https://xd.adobe.com/view/a3ea18fe-314c-4d1c-82d7-d12448735989-f6b9/<br/>
 #### Mobile
 https://xd.adobe.com/view/bbe505f6-067f-4dc7-a41e-c014cb136674-eeb6/<br/>
 <br/>
-Luego de consultar con RRHH se reemplazaron algunos iconos y fotos porque no se encontraban disponibles<br/>
 Se utilizo Sass para los estilos y FETCH para las consultas a la API.<br/>
 <br/>
 Una vez inicializada debería poder visualizarse el home tanto en Dekstop y Mobile.
