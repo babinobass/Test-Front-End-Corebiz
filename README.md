@@ -33,4 +33,5 @@ cuando termine de instalarse las dependencias usar el comando
 ```
 npm start
 ```
-se debe visualizar en el `port:3000`
+se debe visualizar en el `localhost:3000
+`
